@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "01 New in VB 2017", "01 New in VB 2017\01 New in VB 2017.vbproj", "{CABB06BD-AB83-4E2D-82A3-35C05EE61C09}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "NewInVbUnitTest", "..\NewInVbUnitTest\NewInVbUnitTest.vbproj", "{E26ED2D3-9D50-4538-BDD3-D0E422EB1936}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewInCS2017", "..\NewInCS2017\NewInCS2017.csproj", "{3BEBABC4-DB67-44D8-AC91-F81FBDB6D7E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CABB06BD-AB83-4E2D-82A3-35C05EE61C09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CABB06BD-AB83-4E2D-82A3-35C05EE61C09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CABB06BD-AB83-4E2D-82A3-35C05EE61C09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CABB06BD-AB83-4E2D-82A3-35C05EE61C09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E26ED2D3-9D50-4538-BDD3-D0E422EB1936}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E26ED2D3-9D50-4538-BDD3-D0E422EB1936}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E26ED2D3-9D50-4538-BDD3-D0E422EB1936}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E26ED2D3-9D50-4538-BDD3-D0E422EB1936}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BEBABC4-DB67-44D8-AC91-F81FBDB6D7E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BEBABC4-DB67-44D8-AC91-F81FBDB6D7E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BEBABC4-DB67-44D8-AC91-F81FBDB6D7E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BEBABC4-DB67-44D8-AC91-F81FBDB6D7E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

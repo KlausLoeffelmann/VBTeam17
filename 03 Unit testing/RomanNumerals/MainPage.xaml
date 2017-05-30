@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="RomanNumerals.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RomanNumerals"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Rectangle Grid.RowSpan="3">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0837FC" Offset="0"/>
+                    <GradientStop Color="#FFF4F4FD" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <TextBlock Text="Roman numerals"
+                   VerticalAlignment="Center" HorizontalAlignment="Center"
+                   FontSize="48" FontWeight="Bold"/>
+        <TextBox Name="DecimalTextBox" Grid.Row="1" FontSize="24"
+                 VerticalAlignment="Center" HorizontalAlignment="Center"
+                 Width="500" PlaceholderText="Enter decimal number"/>
+        <TextBlock Name="RomanNumeralTextBlock" Grid.Row="2" Text="VXII"
+                   VerticalAlignment="Center" HorizontalAlignment="Center"
+                   FontSize="48"/>
+    </Grid>
+</Page>
