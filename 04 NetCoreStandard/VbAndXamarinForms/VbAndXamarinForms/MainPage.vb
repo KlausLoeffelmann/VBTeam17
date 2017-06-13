@@ -1,8 +1,4 @@
-﻿'Beta Issue? Property page of Project not working in 15.3PV.
-Option Strict On
-Option Infer On
-
-Imports Xamarin.Forms
+﻿Imports Xamarin.Forms
 
 Public Class MainPage
     Inherits ContentPage
@@ -13,7 +9,7 @@ Public Class MainPage
          .VerticalOptions = LayoutOptions.CenterAndExpand,
          .FontSize = 24}
 
-    Dim myConvertButton As New Button With
+    Dim WithEvents myConvertButton As New Button With
         {.Text = "Convert!",
          .VerticalOptions = LayoutOptions.CenterAndExpand,
          .HorizontalOptions = LayoutOptions.CenterAndExpand,
@@ -25,13 +21,13 @@ Public Class MainPage
          .VerticalOptions = LayoutOptions.CenterAndExpand,
          .HorizontalOptions = LayoutOptions.CenterAndExpand}
 
-    Public Sub New()
-
-        AddHandler myConvertButton.Clicked,
-            Sub()
-                myResultLabel.Text = RomanNumerals.
+    Private Sub ConvertButton_Clicked(sender As Object,
+                                        e As EventArgs) Handles myConvertButton.Clicked
+        myResultLabel.Text = RomanNumerals.
                     RomanNumeralFromValue(Integer.Parse(myDecimalEntry.Text))
-            End Sub
+    End Sub
+
+    Public Sub New()
 
         Padding = New Thickness(0, 10, 0, 10)
         Me.BackgroundColor = Color.CornflowerBlue
